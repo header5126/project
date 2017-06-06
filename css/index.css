@@ -1,0 +1,143 @@
+body{
+  font-family: "Microsoft YaHei";
+}
+.header{
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header .row>div{
+  height: 40px;
+  border-left:1px solid #ccc;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+}
+
+.header .row>div:nth-child(1){
+  border-left:none;
+}
+
+.header .row>div a{
+  color:#333;
+  text-decoration: none;
+}
+
+.header  .row>div .btn-register{
+  padding: 5px 10px;
+  background-color: red;
+  color:#fff;
+  border:none;
+}
+
+.header  .row>div .btn-login{
+  border: none;
+  background-color: #fff;
+}
+
+
+/* 引入图标字体*/
+@font-face {
+  font-family: wjsfont;
+  src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'),
+  url('../fonts/MiFie-Web-Font.svg') format('svg'),
+  url('../fonts/MiFie-Web-Font.ttf') format('truetype'),
+  url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+/* 属性选择器*/
+[class^="wjs-icon-"]{
+  font-family: wjsfont;
+}
+
+.wjs-icon-phone::before{
+  content:"\e908";
+}
+
+.wjs-icon-tel::before{
+  content:"\e909";
+}
+
+.wjs-icon-logo::before{
+  content:"\e920";
+}
+
+.wjs-icon-word::before{
+  content:"\e93e";
+}
+
+/*导航条的样式*/
+.wjs-navbar {
+  background-color: #fff;
+  border:none;
+  border-bottom:1px solid #ccc;
+  border-radius: 0;
+}
+.wjs-navbar .navbar-brand {
+  color: #777;
+  height: 80px;
+  line-height: 50px;
+}
+.wjs-navbar .navbar-brand .wjs-icon-logo{
+  color:red;
+  font-size: 50px;
+  vertical-align: middle; /* 文字中线对其 */
+}
+
+.wjs-navbar .navbar-brand .wjs-icon-word{
+  color:#000;
+  font-size: 40px;
+  vertical-align: middle; /* 文字中线对其 */
+}
+.wjs-navbar .navbar-brand:hover,
+.wjs-navbar .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.wjs-navbar .navbar-text {
+  color: #777;
+}
+.wjs-navbar .navbar-nav > li > a {
+  color: #777;
+  height: 80px;
+  line-height: 50px;
+}
+.wjs-navbar .navbar-nav > li > a:hover,
+.wjs-navbar .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+  border-bottom:3px solid red;
+}
+.wjs-navbar .navbar-nav > .active > a,
+.wjs-navbar .navbar-nav > .active > a:hover,
+.wjs-navbar .navbar-nav > .active > a:focus {
+  color: #555;
+}
+.wjs-navbar .navbar-nav > .disabled > a,
+.wjs-navbar .navbar-nav > .disabled > a:hover,
+.wjs-navbar .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.wjs-navbar .navbar-toggle {
+  border-color: #ddd;
+  margin-top:23px;
+}
+.wjs-navbar .navbar-toggle:hover,
+.wjs-navbar .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.wjs-navbar .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.wjs-navbar .navbar-collapse,
+.wjs-navbar .navbar-form {
+  border-color: #e7e7e7;
+}
+.wjs-navbar .navbar-nav > .open > a,
+.wjs-navbar .navbar-nav > .open > a:hover,
+.wjs-navbar .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+
